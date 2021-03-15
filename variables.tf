@@ -1,0 +1,1 @@
+variable ai_notebook{}
