@@ -32,8 +32,5 @@ resource "google_notebooks_instance" "instance" {
     "developer" = "basav"
   }
 
-  metadata = {
-    terraform = "true"
-    installed-extensions=var.extensions_install.install ? var.extensions_install.installed-extensions : ""
-  }
+  metadata = var.metadata
 }

@@ -16,7 +16,8 @@ locals {
         boot_disk_size_gb   = nb.boot_disk_size_gb
         no_public_ip        = nb.no_public_ip
         no_proxy_access     = nb.no_proxy_access
-        extensions_install  = nb.extensions_install
+        metadata               = nb.metadata
+        //extensions_install  = nb.extensions_install
       }
     ]
   ])
@@ -45,5 +46,6 @@ module "ai_notebook"{
   boot_disk_size_gb   = each.value.boot_disk_size_gb
   no_public_ip        = each.value.no_public_ip
   no_proxy_access     = each.value.no_proxy_access
-  extensions_install  = each.value.extensions_install
+  metadata               = each.value.metadata
+  #extensions_install  = each.value.extensions_install
 }

@@ -13,4 +13,5 @@ variable boot_disk_type{}
 variable boot_disk_size_gb{} 
 variable no_public_ip{}      
 variable no_proxy_access{}   
-variable extensions_install{}
+//variable extensions_install{}
+variable metadata{}
